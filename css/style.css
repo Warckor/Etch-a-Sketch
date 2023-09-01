@@ -1,0 +1,129 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    background: #222222;
+}
+
+.pad, .footer {
+    flex-grow: 1;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 300%;
+    margin: 1rem;
+}
+
+
+.pad {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 3rem 1rem;
+    gap: 2rem;
+}
+
+.pad-range {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 0 2rem;
+    width: 300px;
+    height: 20px;
+}
+
+.pad-range input[type="range"] {
+    width: 100%;
+    height: 100%;
+    background: #ccc;
+    border-radius: 10px;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pad-range input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.pad-range p {
+    text-wrap: nowrap;
+}
+
+.pad-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    background: #fff7dc;
+}
+
+.grid-item {
+    box-sizing: border-box;
+    background: #fff7dc;
+    border: 1px solid rgba(177, 177, 177, 0.466);
+}
+
+.grid-item:hover {
+    cursor: pointer;
+    background: #ffc600;
+}
+
+/* button style theme dark */
+.clear {
+    background: #000;
+    color: #fff;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 0.10rem solid #fff;
+}
+
+footer {
+    text-align: center;
+    background: rgb(18, 18, 26);
+    margin: 0;
+    padding: 10px;
+    color: #fff;
+    height: auto;
+}
+
+footer p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    border: 0.10rem solid #fff;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+a:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+    background: #e22b2b;
+}

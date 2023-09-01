@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./assets/stylus.svg" type="image/x-icon">
+    <script src="./index.js" defer></script>
+    <title>Etch-a-Sketch</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Etch-a-Sketch</h1>
+        </div>
+
+        <div class="pad">
+            <div class="pad-range">
+                <p>Seleccione las cuadrículas (5-99):</p>
+                <input type="range" min="5" max="99" step="5" value="16" />
+                <p id="rangeValue">Value: 16</p>
+                <p>Min: 5</p>
+                <p>Max: 99</p>
+                <button class="clear" onclick="clearCanvas()">Clear Canvas</button>
+            </div>
+            <div class="pad-container"> </div>
+        </div>
+        <footer class="github">
+            <p>Created by <a href="https://github.com/Warckor" target="_blank" rel="noopener noreferrer">Warckor</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>
