@@ -77,4 +77,6 @@ rangeInput.addEventListener("input", () => {
   generateDivs(rangeInputValue);
 });
 
-generateDivs(16);
+window.onload = () => {
+  generateDivs(16);
+};
