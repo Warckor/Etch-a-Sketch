@@ -11,7 +11,7 @@ const darkModeCheckbox = document.getElementById("darkMode");
  * @return {undefined} This function does not return a value.
  */
 const generateDivs = (num) => {
-  if (num >= 95) return;
+  if (num > 95) return;
   for (let i = 0; i < num * num; i++) {
     const divGrid = document.createElement("div");
     divGrid.className = `grid-item`;
